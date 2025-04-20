@@ -12,6 +12,3 @@ Analyzes Bitcoin's annualized volatility and Sharpe ratio using CoinGecko API.
 pip install numpy pandas matplotlib requests
 python btc_analysis.py
 ```
-
-## Sample Output
-![BTC Price Chart](outputs/btc_price.png)
