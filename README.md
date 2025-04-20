@@ -1,14 +1,15 @@
-# BTC Financial Analysis
+# BTC Financial Analysis ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 
-Analyzes Bitcoin's annualized volatility and Sharpe ratio using CoinGecko API.
+Analyzes Bitcoin's risk/return metrics using CoinGecko API.
 
 ## Features
-- Fetches 1 year of BTC/USD prices
-- Calculates risk metrics
-- Generates price chart
+- ✅ Fetches live BTC/USD prices
+- 📈 Calculates annualized volatility & Sharpe ratio
+- 📊 Generates interactive plots (Matplotlib)
 
-## How to Run
+## Quick Start
 ```bash
-pip install numpy pandas matplotlib requests
+git clone https://github.com/Mosinza/btc-financial-analysis.git
+cd btc-financial-analysis
+pip install -r requirements.txt
 python btc_analysis.py
-```
