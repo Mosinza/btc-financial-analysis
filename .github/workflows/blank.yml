@@ -1,0 +1,13 @@
+name: Run Analysis
+on: [push]
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip install -r requirements.txt
+      - run: python btc_analysis.py
+      - uses: actions/upload-artifact@v2
+        with:
+          name: output-plot
+          path: outputs/btc_price.png
